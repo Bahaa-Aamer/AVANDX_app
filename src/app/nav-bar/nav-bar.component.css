@@ -1,0 +1,86 @@
+
+nav {
+  width: 100%;
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  z-index: 15;
+}
+
+.navbar-brand {
+  width: 14rem;
+  cursor: pointer;
+}
+.navbar-collapse {
+  transition: 0.4s;
+  width: 100%;
+  justify-content: end;
+}
+.navbar-nav {
+  width: 60%;
+  position: relative;
+  justify-content: space-evenly;
+}
+
+.nav-link {
+  color: #fff !important;
+  cursor: pointer;
+  font-size: 1.3rem;
+  transition: 0.2s;
+}
+
+.navbar-toggler {
+  color: #b50505 !important;
+}
+
+.navbar-toggler-icon {
+  filter: saturate(20) hue-rotate(150deg) brightness(1.8);
+}
+
+
+
+.login-button {
+  background-color: #b50505;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin-left: 0;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+}
+.login-button:hover {
+  box-shadow: 0 0 20px 10px #b50505;
+}
+
+.nav-link:hover {
+  filter: blur(0);
+  text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.navbar-nav:hover .nav-link:not(:hover) {
+  filter: blur(3px);
+}
+
+@media (max-width: 992px) {
+  /* .navbar-brand {
+    width: 50%;
+  } */
+
+  .navbar-nav {
+    width: 100%;
+    text-align: center;
+  }
+
+  .login-button {
+    width: 25%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 991px) and (max-width: 1024px) {
+  .navbar {
+    padding-right: 5%;
+  }
+}

@@ -1,0 +1,28 @@
+.container-fluid {
+  position: relative;
+  margin-bottom: 4rem;
+  overflow: hidden;
+  padding: 0;
+}
+
+.row {
+  justify-content: center;
+}
+.row video {
+  object-fit: cover;
+  padding: 0;
+  transform: scale(2);
+}
+
+.main-vid {
+  z-index: 5;
+}
+
+@media (max-width: 992px) {
+  .row {
+    margin: 0 auto;
+  }
+  .container-fluid {
+    margin-bottom: 2rem;
+  }
+}
